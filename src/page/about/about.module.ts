@@ -5,6 +5,6 @@ import { AboutComponent } from './about';
 const AboutModule: ng.IModule = angular.module('AboutModule', [
   // AboutServiceModule.name
 ])
-  .component('about', AboutComponent)
+  .component('about', AboutComponent);
 
 export { AboutModule };

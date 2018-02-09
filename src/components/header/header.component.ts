@@ -44,7 +44,8 @@ class HeaderComponentContorller implements ng.IComponentController {
 
   private async getMenu(): Promise<void> {
     console.log('getMenu');
-    // this.menus = this.headerService.loadMenu();
+    // this.menus = 
+    console.log(this.headerComponentService.loadMenu());
   }
 
   private showConsole(message: string): void {

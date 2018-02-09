@@ -1,16 +1,14 @@
 import * as angular from 'angular';
-import { HeaderComponentService } from './service/header.component.service';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponentService } from './service/footer.component.service';
 import { FooterComponent } from './footer/footer.component';
 import { OnePaperComponent } from './onepaper';
+import { OnePaperServiceModule } from './service/onepaper.service.module';
 
 const OnePaperModule: ng.IModule = angular.module('OnePaperModule', [
-  // HeaderComponentService.name,
-  // FooterComponentService.name
+  OnePaperServiceModule.name
 ])
-  // .component('headerComponent', HeaderComponent)
+  .component('header', HeaderComponent);
   // .component('footerComponent', FooterComponent)
-  .component('onePaper', OnePaperComponent);
+  // .component('onePaper', OnePaperComponent);
 
 export { OnePaperModule };
