@@ -3,9 +3,12 @@ import * as angular from 'angular';
 import { AppComponent } from './app.component';
 import { PageModule } from '../page/page.module';
 import { AppRoutingModule } from './app.router.module';
+import { OnePaperModule } from '../components/onepaper.module';
+// import { CommonModule } from '../components/common.module';
 
 const AppModule: ng.IModule = angular.module('AppModule', [
-  PageModule.name
+  PageModule.name,
+  OnePaperModule.name
 ])
   .component('lcApp', AppComponent)
   .config(function () {

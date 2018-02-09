@@ -1,4 +1,4 @@
-import { Menu } from "../../model/menu";
+import { Menu } from '../../model/menu';
 
 export class HeaderComponentService {
   static $inject: Array<string> = ['$http'];

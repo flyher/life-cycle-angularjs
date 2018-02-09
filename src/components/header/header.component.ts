@@ -1,4 +1,3 @@
-// import * as angular from 'angular';
 import { Menu } from '../../model/menu';
 import { HeaderComponentSource } from '../../source/header.component';
 import { HeaderComponentService } from '../service/header.component.service';
@@ -17,27 +16,30 @@ class HeaderComponentContorller implements ng.IComponentController {
     private headerComponentService: HeaderComponentService) {
     // $scope.$on('ngRepeatFinished', ($event) => {
     // });
+    this.showConsole('HeaderComponentContorller');
   }
+
+
   // https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   $onInit() {
     this.getMenu();
-    this.showConsole('$onInit');
-  };
+    this.showConsole('HeaderComponentContorller $onInit');
+  }
 
   $onChanges() {
-    this.showConsole('#onChanges');
+    this.showConsole('HeaderComponentContorller $onChanges');
   }
 
   $doCheck() {
-    this.showConsole('#doCheck');
+    this.showConsole('HeaderComponentContorller $doCheck');
   }
 
   $onDestroy() {
-    this.showConsole('#onDestroy');
+    this.showConsole('HeaderComponentContorller $onDestroy');
   }
 
   $postLink() {
-    this.showConsole('#postLink');
+    this.showConsole('HeaderComponentContorller $postLink');
   }
 
   private async getMenu(): Promise<void> {
@@ -46,7 +48,7 @@ class HeaderComponentContorller implements ng.IComponentController {
   }
 
   private showConsole(message: string): void {
-    console.log(message)
+    console.log(message);
   }
 }
 
@@ -54,9 +56,9 @@ const HeaderComponent: ng.IComponentOptions = {
   bindings: {
     id: '@'
   },
-  templateUrl: './header.tpl',
+  templateUrl: './header.component.html',
   controller: HeaderComponentContorller,
   controllerAs: 'headerComponentCtrl'
-}
+};
 
 export { HeaderComponent };

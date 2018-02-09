@@ -1,3 +1,3 @@
 export class HeaderComponentSource {
-  name: 'Header'
+  name: 'Header';
 }

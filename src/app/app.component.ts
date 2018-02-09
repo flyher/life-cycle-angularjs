@@ -6,6 +6,7 @@ class AppComponentController implements ng.IComponentController {
 
 const AppComponent: ng.IComponentOptions = {
   template: '<ui-view></ui-view>',
+  // templateUrl: './app.component.html',
   controller: AppComponentController,
   controllerAs: 'app'
 };

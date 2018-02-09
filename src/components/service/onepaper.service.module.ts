@@ -2,7 +2,7 @@ import * as angular from 'angular';
 import { HeaderComponentService } from './header.component.service';
 import { FooterComponentService } from './footer.component.service';
 
-const PageServiceModule: ng.IModule = angular.module('PageServiceModule', [])
+const OnePaperServiceModule: ng.IModule = angular.module('OnePaperServiceModule', [])
   .service('HeaderComponentService', HeaderComponentService)
   .service('FooterComponentService', FooterComponentService);
-export { PageServiceModule };
+export { OnePaperServiceModule };
