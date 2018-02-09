@@ -68,7 +68,7 @@ module.exports = {
         exclude: [/\.(spec|e2e)\.ts$/]
       },
       {
-        test: /\.html$/,
+        test: /\.(html|tpl)$/,
         use: ['raw-loader']
       },
       {

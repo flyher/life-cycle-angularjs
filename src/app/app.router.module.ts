@@ -4,10 +4,10 @@ export class AppRoutingModule {
 
   constructor($stateProvider: ng.ui.IStateProvider, $urlRouterProvider: ng.ui.IUrlRouterProvider) {
     $stateProvider
-      // .state('index', {
-      //   url: 'index',
-      //   component: 'index'
-      // })
+      .state('about', {
+        url: '/about',
+        component: 'about'
+      })
       .state('contact', {
         url: '/contact',
         component: 'contact'
@@ -18,6 +18,8 @@ export class AppRoutingModule {
       });
 
     // $urlRouterProvider
+    //   .when('/', '/contact')
+    //   .otherwise('/contact');
     //   .when('/', '/index/xzxz')
     //   .otherwise('/index/xzxz');
   }
