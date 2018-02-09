@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run server | npm run dev",
-    "pre": "set NODE_ENV=pre & webpack -p",
+    "pre": "set NODE_ENV=pre & webpack -p  --progress --colors ",
     "release": "set NODE_ENV=release & webpack -p"
   },
   "keywords": [
