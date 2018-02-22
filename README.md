@@ -15,3 +15,5 @@ ng1.6 + component + typescript
 ``` log
 `templateUrl`错误处理成`template`
 ```
+
+[life-cycle-hooks](https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks)
