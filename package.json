@@ -1,7 +1,7 @@
 {
-  "name": "life-cycle",
+  "name": "life-cycle-angularjs",
   "version": "1.0.0",
-  "description": "Life cycle demo base on AngularJS, TypeScript & WebPack.",
+  "description": "Life cycle demo base on AngularJS, Typescript, Package by Webpack.",
   "main": "index.js",
   "scripts": {
     "start": "npm run server | npm run dev",
