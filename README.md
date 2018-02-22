@@ -44,6 +44,8 @@ the code  will release in `./dist/` with sourceMap
 npm run pre
 ```
 
+Press F12 to debug
+
 ### Q&A 
 
 [Failed to instantiate module ngAnimate](https://stackoverflow.com/questions/23634393/failed-to-instantiate-module-nganimate-due-to)
